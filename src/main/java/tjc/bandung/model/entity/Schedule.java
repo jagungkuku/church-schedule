@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -13,7 +14,7 @@ import java.util.List;
 public class Schedule {
     private int id;
     @JsonFormat(pattern="dd-MM-yyyy")
-    private Date scheduleDate;
+    private LocalDate scheduleDate;
     private Task task;
     private List<User> users;
 
@@ -29,11 +30,11 @@ public class Schedule {
     }
 
     @Column(name = "schedule_date")
-    public Date getScheduleDate() {
+    public LocalDate getScheduleDate() {
         return scheduleDate;
     }
 
-    public void setScheduleDate(Date scheduleDate) {
+    public void setScheduleDate(LocalDate scheduleDate) {
         this.scheduleDate = scheduleDate;
     }
 
