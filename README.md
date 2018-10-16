@@ -1,10 +1,10 @@
 # church-schedule
 prequisites
-JDK 8
-maven 3.3.9
+- JDK 8
+- maven 3.3.9
 
 how to run
-mvnw spring-boot:run
+- mvnw spring-boot:run
 
 test
-http://localhost:4951/schedules?year=2018&quarter=2&category=UMUM_JUMAT
+- http://localhost:4951/schedules?year=2018&quarter=2&category=UMUM_JUMAT
